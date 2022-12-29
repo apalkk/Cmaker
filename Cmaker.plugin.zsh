@@ -1,18 +1,12 @@
 alias cjump="nvim $(mdfind -onlyin . -name 'main' | grep -A 1 /Users)"
-alias clist="mdfind -onlyin . -interpret .cpp"
+
+alias clist="mdfind -onlyin . -interpret .cpp & mdfind -onlyin . -interpret .cc"
 
 function cgen(){
   mkdir $1
   cd $1
   touch CMakeLists.txt
-  echo "cmake_minimum_required(VERSION 3.15)" >> CMakeLists.txt
-  echo "project($1)" >> CMakeLists.txt 
-  echo "cmake_minimum_required(VERSION 3.15)" >> CMakeLists.txt
-  echo "add_executable(cpc $(pwd)/src/main.cpp)" >> CMakeLists.txt
-  echo "#find_package()" >> CMakeLists.txt
-  echo "#target_incldue_directories()" >> CMakeLists.txt
-  echo "#target_link_directories()" >> CMakeLists.txt
-  echo "#target_link_libraries()" >> CMakeLists.txt
+  cat ~/.oh-my-zsh/custom/plugins/cMaker/ListTemplate.txt >> CMakeLists.txt
   mkdir src
   cd src
   touch main.cpp
@@ -48,4 +42,8 @@ function ccomp(){
   crun qwertyu
   mv cpc ../
   rm -r qwertyu
+}
+
+function ctemp(){
+  open ~/.oh-my-zsh/custom/plugins/cMaker/ListTemplate.txt
 }
