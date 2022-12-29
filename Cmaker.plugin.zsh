@@ -1,7 +1,7 @@
 alias cjump="nvim $(mdfind -onlyin . -name 'main' | grep -A 1 /Users)"
 alias clist="mdfind -onlyin . -interpret .cpp"
 
-function cbuild(){
+function cgen(){
   mkdir $1
   cd $1
   touch CMakeLists.txt
