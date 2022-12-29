@@ -1,5 +1,5 @@
 # Cmaker
-An oh-my-zsh plugin to make using cmake easier
+An oh-my-zsh plugin to make using cmake easier.
 
 ## Commands
 * ```cjump``` -> If you are in the directory of your project ```cjump``` will open the 'main' file in your project. No arguements for this commands.
@@ -14,3 +14,4 @@ An oh-my-zsh plugin to make using cmake easier
 * cbuild | Make sure your project name doesnt conflict with other directory names.
 * cbin | This only works with single files but is faster than ccomp.
 * ccomp | Make sure that you don't have a directory called qwertyu in your current dir when you're running this.
+* This plugin can only be used to generate templates for binary projects not library projects.
