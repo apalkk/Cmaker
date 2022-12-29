@@ -38,3 +38,14 @@ function cbin(){
 function cput(){
   mv $1/*(DN) $2/
 }
+
+function ccomp(){
+  cbuild qwertyu
+  cd qwertyu/src
+  rm main.cpp
+  cd ../..
+  mv $1/*(DN) qwertyu/src/
+  crun qwertyu
+  mv cpc ../
+  rm -r qwertyu
+}
