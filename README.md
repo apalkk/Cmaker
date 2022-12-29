@@ -12,7 +12,7 @@ Cmaker uses a template text file located in the ```~/.oh-my-zsh/custom/plugins/c
 * ```cbin``` -> This will instantly create a binary file called cpc. Pass filename as an arguement : ```cbin <file path>```
 * ```cput``` -> Moves all files from one directory to another. Usage : ```cput <directory> <directory to move files to>```
 * ```ccomp``` -> Runs a directory of cpp files containing main.cpp and which are part of one project. Usage : ```ccomp <dir name>```
-*```ctemp``` -> Allows you to edit the template with which CMakeLists.txt will be created
+*ctemp -> Allows you to edit the template with which CMakeLists.txt will be created
 
 ## Notes:
 * cbuild | Make sure your project name doesnt conflict with other directory names.
