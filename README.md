@@ -1,6 +1,17 @@
 # Cmaker
 An oh-my-zsh plugin to make using cmake easier.
 
+## Installation
+
+### If you have Oh-My-Zsh installed ->
+* ```cd /Users/$USER/.oh-my-zsh/custom```
+* ```git clone https://github.com/apalkk/Cmaker.git```
+* ```source ~/.zshrc```
+
+### If you don't ->
+* Copy the Cmaker.plugin.zsh file
+* Open the ```~/.zshrc``` file and then paste everythin there.
+
 ## How It Works
 Cmaker uses a template text file located in the ```~/.oh-my-zsh/custom/plugins/cMaker``` directory to create a CMakeLists.txt file which will act as a config file when commands like ```cgen```,```ccomp``` and ```cbin``` are run. You can use ```ctemp``` to edit the template file or you can use ```cgen``` and then edit the CMakeLists.txt file after it has been generated. However, this not possible with commands like ```ccomp``` and ```cbin``` as they instantly run the code after generating the cmake files. In that case, you mest edit the template. A basic template has already been setup for you.
 
