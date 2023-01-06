@@ -3,12 +3,12 @@ An oh-my-zsh plugin to make using cmake easier.
 
 ## Installation
 
-### If you have Oh-My-Zsh installed ->
+### If you have Oh-My-Zsh installed
 * ```cd /Users/$USER/.oh-my-zsh/custom```
 * ```git clone https://github.com/apalkk/Cmaker.git```
 * ```source ~/.zshrc```
 
-### If you don't ->
+### If you don't
 * Copy the Cmaker.plugin.zsh file
 * Open the ```~/.zshrc``` file and then paste everythin there.
 
