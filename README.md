@@ -18,7 +18,7 @@ Cmaker uses a template text file located in the ```~/.oh-my-zsh/custom/plugins/c
 ## Commands
 * ```cjump``` -> If you are in the directory of your project ```cjump``` will open the 'main' file in your project. No arguements for this commands
 * ```clist``` -> ```clist``` will list every file ending with .cpp or .cc in your current directory.  No arguements for this commands
-* ```cgen``` -> Creates the ```CMakeLists.txt``` file (with basic configs allowing you to run instantly) as well as the src directory along with main.cpp in the src. Usage : ```cgen <project name>``
+* ```cgen``` -> Creates the ```CMakeLists.txt``` file (with basic configs allowing you to run instantly) as well as the src directory along with main.cpp in the src. Usage : ```cgen <project name>```
 * ```crun``` -> This will produce a binary file after you have used ```cgen``` and written in the main.cpp file. Use ```crun <directory name>```
 * ```cbin``` -> This will instantly create a binary file called cpc. Pass filename as an arguement : ```cbin <file path>```
 * ```cput``` -> Moves all files from one directory to another. Usage : ```cput <directory> <directory to move files to>```
